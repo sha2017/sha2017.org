@@ -1,0 +1,150 @@
+#header {
+    background-color: #5b4ddb !important;
+}
+
+#banner {
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+#banner::after {
+    background-color: #FFFFFF !important;
+    background: url('../../images/index.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#one.spotlight .content {
+    background-color: #5b4ddb !important;
+}
+
+#one.spotlight.style1 .content {
+    border-color: #5b4ddb !important;
+}
+
+.button.special {
+    background-color: #d39a49;
+}
+
+#onetwo .content {
+    background-color: #d39a49;
+}
+
+#onetwo.spotlight.style1 .content {
+    border-color: #d39a49 !important;
+}
+
+#nav li {
+    font-weight: bold;
+}
+
+#header {
+    position: fixed !important;
+}
+
+#two {
+    background-color: #FFFFFF !important;
+    color: #000000;
+}
+
+#two h2 {
+    color: #000000;
+}
+
+#two li a {
+    background-color: #000000;
+}
+
+#two h3 {
+    color: #000000;
+}
+
+#five {
+    background-color: #2c7e52;
+}
+
+#five input {
+    color: #000000 !important;
+}
+
+.spotlight:before {
+    background-image: none !important;
+}
+
+#footer {
+    background-color: #086A9A !important;
+}
+
+#footer .copyright {
+    color: #FFFFFF;
+}
+
+.filler {
+    margin: 0 0 0 0 !important;
+}
+
+.image:before {
+    background-image: none !important;
+}
+
+#titleBar {
+    background: #5b4ddb !important;
+}
+
+#titleBar .toggle:before {
+    background: #808080;
+}
+
+.spotlight {
+    box-shadow: none !important;
+}
+
+#navPanel .link:hover {
+    color: #ffffff !important;
+}
+
+
+/*   a { color: #FFFFFF !important; }   */
+
+a:hover {
+    color: #C057D6 !important;
+}
+
+.button.special:hover {
+    background-color: #C057D6 !important;
+}
+
+.button:hover,
+.button:active {
+    color: #C057D6 !important;
+}
+
+.button.special:hover {
+    color: #FFFFFF !important;
+}
+
+strong {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+
+#menuitem {
+text-align: left;
+}
+
+#pagination ul {
+list-style: none;
+}
+
+#pagination li a {
+background-color: #FFFFFF;
+color: purple;
+}
+
+#pagination li {
+    display: inline;
+    padding: 0 0.5em;
+}

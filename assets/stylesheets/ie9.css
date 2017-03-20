@@ -1,0 +1,32 @@
+/*
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+/* Loader */
+/* line 15, ../sass/ie9.scss */
+body.landing:before, body.landing:after {
+  display: none !important;
+}
+
+/* Icon */
+/* line 23, ../sass/ie9.scss */
+.icon.alt {
+  color: inherit !important;
+}
+/* line 29, ../sass/ie9.scss */
+.icon.major.alt:before {
+  color: #ffffff !important;
+}
+
+/* Banner */
+/* line 39, ../sass/ie9.scss */
+#banner:after {
+  background-color: rgba(23, 24, 32, 0.95);
+}
+
+/* Footer */
+/* line 50, ../sass/ie9.scss */
+#footer .icons .icon.alt:before {
+  color: #ffffff !important;
+}

@@ -1,0 +1,117 @@
+    {{ include('partials/_header.twig') }}
+	{{ include('partials/_navbar.twig') }}
+    {{ include('partials/_banner.twig') }}
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{{ paths.theme }}/images/pic02.jpg" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>SHA2017 is a non profit outdoor Hacker camp taking place in The Netherlands in 2017 on August 4th to 8th.</h2>
+									</header>
+								</div>
+								<div class="4u 12u$(medium)">
+                                                                        <p>It is the successor of a string of similar events happening 
+                                                                        every four years. These are GHP, HEU, HIP, HAL, WTH, HAR and OHM.<br/><br/> 
+                                                                        Similar events are EMF Camp 2016 in the UK, CCC Camp and congress in Germany.<br/>
+                                                                        The location is the Scoutinglandgoed in Zeewolde, 55km east of Amsterdam.</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+                                                                        <p>The festival is organized for and by volunteers from and around 
+                                                                        all facets of the international hacker community. <br/><br/>
+                                                                        Knowledge sharing, technological advancement, experimentation, 
+                                                                        connecting with your hacker peers and of course hacking are some 
+                                                                        of the core values of this event.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+				<section id="two" class="wrapper style1 special">
+				<div class="container">
+
+						<div class="box alt">
+							<div class="row uniform">
+								<section class="4u 6u(medium) 12u$(xsmall)">
+								<a href="https://wiki.sha2017.org" target="_blank">
+									<span class="icon alt major fa-area-chart"></span></a>
+									<h3><a href="https://wiki.sha2017.org" target="_blank">Visitor Wiki</a></h3>
+									<p>Most information for visitors can currently be found in the wiki.</p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+								<a href="https://tickets.sha2017.org" target="_blank">
+									<span class="icon alt major fa-comment"></span></a>
+									<h3><a href="https://tickets.sha2017.org" target="_blank">Ticketshop</a></h3>
+									<p>You can buy your tickets, tents, parking and boat spots in the ticketshop.</p>
+								</section>
+								<section class="4u$ 6u(medium) 12u$(xsmall)">
+								<a href="/pages/code-of-conduct">
+									<span class="icon alt major fa-flask"></span></a>
+									<h3><a href="/pages/code-of-conduct">Code of Conduct</a></h3>
+									<p>We have a clear code of conduct and safety team.</p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<a href="/pages/call-for-participation">
+									<span class="icon alt major fa-paper-plane"></span></a>
+									<h3><a href="/pages/call-for-participation">Call for Participation</a></h3>
+									<p>Our call for papers is still open, submit your proposals here.</p>
+								</section>
+								<section class="4u 6u(medium) 12u$(xsmall)">
+								<a href="https://lists.sha2017.org/cgi-bin/mailman/listinfo" target="_blank">
+									<span class="icon alt major fa-file"></span></a>
+									<h3><a href="https://lists.sha2017.org/cgi-bin/mailman/listinfo" target="_blank">Mailing lists</a></h3>
+									<p>There are a number of mailing lists, you can find them here..</p>
+								</section>
+								<section class="4u$ 6u$(medium) 12u$(xsmall)">
+								<a href="https://orga.sha2017.org" target="_blank">
+									<span class="icon alt major fa-lock"></span></a>
+									<h3><a href="https://orga.sha2017.org" target="_blank">Orga Wiki</a></h3>
+									<p>SHA2017 is arranged by volunteers and they use the orga wiki</p>
+								</section>
+							</div>
+						</div>
+
+						<footer class="major">
+							<ul class="actions">
+								<li><a href="#onetwo" class="scrolly button">More</a></li>
+							</ul>
+						</footer>
+					<a href="#onetwo" class="goto-next scrolly">Next</a>
+				</div>
+				</section>
+				<section id="onetwo" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{{ paths.theme }}/images/pic02.jpg" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+
+								<div class="12u 12u$(medium)" style="text-align:center;">
+									<header>
+										<h2>Orga, Event & Ticketshop updates:</h2>
+									</header>
+								</div>
+
+							   {% setcontent news='entries/latest/3'%}
+							   {% for new in news %}
+							   <div class="4u 12u$(medium)">
+							   <h4><a href="{{ new.link }}">{{ new.title }}</a></h4>
+							   <p>{{new.teaser}}</p>
+							   <!-- <a href="{{ item.link }}">Read more...</a> -->
+							   </div>
+							   {% endfor %}
+
+							</div>
+						</div>
+					</div>
+
+					<a href="#five" class="goto-next scrolly">Next</a>
+				</section>
+{{ include('partials/_filler.twig') }}
+{{ include('partials/_signup.twig') }}
+{{ include('partials/_filler.twig') }}
+{{ include('partials/_footer.twig') }}
+
