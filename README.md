@@ -1,14 +1,7 @@
 SHA2017 Theme
 =============
 
-curl -O https://bolt.cm/distribution/bolt-latest.tar.gz
-
-tar -xzf bolt-latest.tar.gz --strip-components=1
-
-php app/nut init
-
-
-then copy this theme to public/theme/ and add it to your config.yml
-
+To install the development environment automaticly run the following command. 
+curl -L https://gist.githubusercontent.com/mattronix/1c111b813d15cb0f7a76b433893def6f/raw/55f3cd02544f15b199794e8c74a2f6bd5426c78b/installsha2017.org.sh | bash 
 
 
