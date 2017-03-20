@@ -148,3 +148,5 @@ color: purple;
     display: inline;
     padding: 0 0.5em;
 }
+
+p a { color: #000000; }
