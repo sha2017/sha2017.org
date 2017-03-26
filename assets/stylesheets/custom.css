@@ -159,3 +159,40 @@ p a { color: #000000; }
 #logo a { font-weight: bold; }
 
 #onetwo h4 { font-weight: bold; }
+
+.content {
+    display:none;
+    padding:10px;
+    }
+
+.collapse {
+      /*border: 1px solid #84878A;*/
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color:#f7f7f7; 
+      border-color: #cccccc;
+      width:100%;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;      
+      
+  }
+
+
+.collapse a {
+color: black !important;
+}
+
+.toggle.expander.expanded {
+  padding-left: 13px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(/theme/sha2017.org/images/expanded.gif);
+}
+    
+.toggle.expander.collapsed {
+  padding-left: 13px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(/theme/sha2017.org/images/collapsed.gif);
+}        
