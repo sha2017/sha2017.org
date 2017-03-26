@@ -150,3 +150,7 @@ color: purple;
 }
 
 p a { color: #000000; }
+
+#one a { color:#FFFFFF; }
+#nav a { color:#FFFFFF !important; }
+p { color:#FFFFFF !important; }
