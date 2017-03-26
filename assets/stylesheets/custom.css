@@ -160,7 +160,7 @@ p a { color: #000000; }
 
 #onetwo h4 { font-weight: bold; }
 
-.content {
+.collapse-content {
     display:none;
     padding:10px;
     }
