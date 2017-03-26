@@ -156,4 +156,6 @@ p a { color: #000000; }
 #onetwo a { color:#FFFFFF !important; }
 #one p { color:#FFFFFF !important; }
 #onetwo p { color:#FFFFFF !important; }
-#logo a { font-weight: bold; }:
+#logo a { font-weight: bold; }
+
+#onetwo h4 { font-weight: bold; }
