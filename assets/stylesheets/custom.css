@@ -153,4 +153,5 @@ p a { color: #000000; }
 
 #one a { color:#FFFFFF; }
 #nav a { color:#FFFFFF !important; }
-p { color:#FFFFFF !important; }
+#one p { color:#FFFFFF !important; }
+#onetwo p { color:#FFFFFF !important; }
