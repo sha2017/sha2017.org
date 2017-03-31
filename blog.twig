@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+        Landed by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+        <head>
+                <title>Latest Updates | SHA2017</title>
+                {{ seo.metatags() }}
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="shortcut icon" href="{{ paths.theme }}/images/favicon.ico" type="image/vnd.microsoft.icon" />                <!--[if lte IE 8]><script src="{{ paths.theme }}/assets/js/ie/html5shiv.js"></script><![endif]-->
+                <link rel="stylesheet" href="{{ paths.theme }}/assets/css/main.css" />
+                <link rel="stylesheet" href="{{ paths.theme }}/assets/stylesheets/custom.css" />
+                <!--[if lte IE 9]><link rel="stylesheet" href="{{ paths.theme }}/assets/css/ie9.css" /><![endif]-->
+                <!--[if lte IE 8]><link rel="stylesheet" href="{{ paths.theme }}/assets/css/ie8.css" /><![endif]-->
+        </head>
+{{ include ('partials/_navbar.twig') }}
+				<section id="two" class="wrapper style1 special">
+
+<h2>Latest Updates</h2>
+				<div class="container">
+
+
+
+<div align="left">
+{{ record.body }}
+</div>
+						<div class="box alt">
+						
+
+{% block main %}
+
+        {# This template is used for 'listings': Generic pages that list a number of
+           records from a certain contenttype. These records are available as an array
+           called 'records'. In the for-loop below, we iterate over the records that
+           are on this page. It can be used for overview pages like 'all entries', or
+           'all records tagged with kittens'. #}
+
+        {# If used for listing a taxonomy, we add a heading.: #}
+        {% if taxonomytype is defined %}
+            <h1>
+                {{ __('general.phrase.overview-for') }}
+                {% if taxonomy.options[slug] is defined %}
+                    {{ taxonomy.options[slug] }}
+                {% else %}
+                    {{ slug }}
+                {% endif %}
+            </h1>
+            {# Taxonomies are fetched unordered by design except if 'has_sortorder'
+               is set to true. This way we keep 'grouping' intact in the listing. #}
+            {% if not taxonomy.has_sortorder %}
+                {# If we specified an order in config.yml, sort them here, accordingly: #}
+                {% set records = records|order(app.config.get('general/listing_sort')) %}
+            {% endif %}
+        {% endif %}
+
+        {% for record in records %}
+            <article id="menuitem">
+
+                <h2><a href="{{ record.link }}">{{ record.title }}</a></h2>
+
+                {{ popup(record.image, 1200, 500) }}
+
+                {# display something introduction-like.. #}
+                {% if record.introduction %}
+                    {{ record.introduction }}
+                {% elseif record.teaser %}
+                    {{ record.teaser }}
+                {% else %}
+                    <p>{{ record.excerpt(300, false, search|default('')) }}</p>
+                {% endif %}
+               <a href="{{ record.link }}">Read more...</a>
+            </article>
+
+            {% if not loop.last %}
+                <hr>
+            {% endif %}
+
+        {% else %}
+            <article>
+
+                <h2>{{ __('general.phrase.no-content-found') }}</h2>
+
+                <p>
+                    {{ __("Unfortunately, no content could be found. Try another page, or go to the <a href=\"%paths_root%\">homepage</a>.", {'%paths_root%': path('homepage')} ) }}
+                </p>
+
+            </article>
+        {% endfor %}
+
+        {# If there are more records than will fit on one page, the pager is shown. #}
+        {{ pager(template = 'partials/_sub_pager.twig') }}
+
+{% endblock main %}
+
+
+						<footer class="major">
+							<ul class="actions">
+								<li><a href="https://tickets.sha2017.org" class="scrolly button">Ticketshop</a></li>
+							</ul>
+						</footer>
+				</div>
+				</section>
+
+{{ include('partials/_filler.twig') }}
+{{ include('partials/_signup.twig') }}
+{{ include('partials/_filler.twig') }}
+{{ include('partials/_footer.twig') }}
