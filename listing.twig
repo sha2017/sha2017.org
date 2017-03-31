@@ -54,7 +54,7 @@
                 {% else %}
                     <p>{{ record.excerpt(300, false, search|default('')) }}</p>
                 {% endif %}
-
+               <a href="{{ record.link }}">Read more...</a>
             </article>
 
             {% if not loop.last %}
