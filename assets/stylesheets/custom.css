@@ -140,7 +140,7 @@ strong {
 
 #pagination li a {
     background-color: #FFFFFF;
-    color: purple;
+    color: #C057D6;
 }
 
 #pagination li {
@@ -226,4 +226,8 @@ p a {
 .recorddate {
     font-style: italic;
     margin-bottom: 5px;
+}
+
+a {
+    color: #5b4ddb;
 }
