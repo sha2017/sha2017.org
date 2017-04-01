@@ -59,7 +59,8 @@
         {% for record in records %}
             <article id="menuitem">
 
-                <h2><a href="{{ record.link }}">{{ record.title }}</a></h2>
+                <span id="listingtitle"><h2><a href="{{ record.link }}">{{ record.title }}</a></h2></span>
+                <div class="recorddate">{{ record.datecreated | date("jS F Y") }}</div>
 
                 {{ popup(record.image, 1200, 500) }}
 

@@ -130,18 +130,17 @@ strong {
     font-weight: bold;
 }
 
-
 #menuitem {
-text-align: left;
+    text-align: left;
 }
 
 #pagination ul {
-list-style: none;
+    list-style: none;
 }
 
 #pagination li a {
-background-color: #FFFFFF;
-color: purple;
+    background-color: #FFFFFF;
+    color: purple;
 }
 
 #pagination li {
@@ -149,50 +148,82 @@ color: purple;
     padding: 0 0.5em;
 }
 
-p a { color: #000000; }
+p a {
+    color: #000000;
+}
 
-#one a { color:#FFFFFF; }
-#nav a { color:#FFFFFF !important; }
-#onetwo a { color:#FFFFFF !important; }
-#one p { color:#FFFFFF !important; }
-#onetwo p { color:#FFFFFF !important; }
-#logo a { font-weight: bold; }
-#two a { border-bottom: none; }
-#onetwo h4 { font-weight: bold; }
+#one a {
+    color: #FFFFFF;
+}
+
+#nav a {
+    color: #FFFFFF !important;
+}
+
+#onetwo a {
+    color: #FFFFFF !important;
+}
+
+#one p {
+    color: #FFFFFF !important;
+}
+
+#onetwo p {
+    color: #FFFFFF !important;
+}
+
+#logo a {
+    font-weight: bold;
+}
+
+#two a {
+    border-bottom: none;
+}
+
+#onetwo h4 {
+    font-weight: bold;
+}
 
 .collapse-content {
-    display:none;
-    padding:10px;
-    }
+    display: none;
+    padding: 10px;
+}
 
 .collapse {
-      /*border: 1px solid #84878A;*/
-      padding: 10px;
-      margin-bottom: 15px;
-      background-color:#f7f7f7; 
-      border-color: #cccccc;
-      width:100%;
-      border-radius: 2px;
-      -moz-border-radius: 2px;
-      -webkit-border-radius: 2px;      
-      
-  }
-
+    /*border: 1px solid #84878A;*/
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f7f7f7;
+    border-color: #cccccc;
+    width: 100%;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
 
 .collapse a {
-color: black !important;
+    color: black !important;
 }
 
 .toggle.expander.expanded {
-  padding-left: 13px;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-image: url(/theme/sha2017.org/images/expanded.gif);
+    padding-left: 13px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(/theme/sha2017.org/images/expanded.gif);
 }
-    
+
 .toggle.expander.collapsed {
-  padding-left: 13px;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-image: url(/theme/sha2017.org/images/collapsed.gif);
-}        
+    padding-left: 13px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(/theme/sha2017.org/images/collapsed.gif);
+}
+
+#listingtitle h2 {
+    margin: 0 0 0 0 !important;
+}
+
+.recorddate {
+    font-style: italic;
+    margin-bottom: 5px;
+}
