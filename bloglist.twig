@@ -60,7 +60,7 @@
             <article id="menuitem">
 
                 <span id="listingtitle"><h2><a href="{{ record.link }}">{{ record.title }}</a></h2></span>
-                <div class="recorddate">{{ record.datepublish | date("jS F Y") }}</div>
+                <div class="recorddate">{{ record.datepublish | date("F jS Y") }}</div>
 
                 {{ popup(record.image, 1200, 500) }}
 
