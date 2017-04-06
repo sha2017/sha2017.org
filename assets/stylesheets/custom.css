@@ -54,7 +54,7 @@
 }
 
 #two li a {
-    background-color: #000000;
+    background-color: transparent;
 }
 
 #two h3 {
@@ -178,6 +178,7 @@ p a {
 
 #two a {
     border-bottom: none;
+    color: #5b4ddb;
 }
 
 #onetwo h4 {
