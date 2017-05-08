@@ -232,3 +232,8 @@ p a {
 a {
     color: #5b4ddb;
 }
+
+table th {
+    color: #000000 !important;
+    font-size: 1.5em !important;
+}
