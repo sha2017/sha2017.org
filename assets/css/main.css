@@ -1,6 +1,11 @@
 @import url("font-awesome.min.css");
 @import url("roboto.css");
 
+/* Trying to make the button on the bottom of every page/blog post more visible. */
+.scrolly {
+    background-color: #5b4ddb;
+}
+
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
