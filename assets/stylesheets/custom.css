@@ -232,8 +232,28 @@ p a {
 a {
     color: #5b4ddb;
 }
-
 table th {
     color: #000000 !important;
     font-size: 1.5em !important;
+}
+/* SPONSORS */
+div.sponsors_parent{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+div.sponsors_parent > div {
+	flex-grow: 1;
+	flex-basis: 25%;
+	min-width: 200px;
+	max-width: 300px;
+	overflow:hidden;
+	padding: 10px;
+}
+div.sponsors_parent > div > a{
+	display:block;
+	width: 100%;
+}
+div.sponsors_parent > div > a > img{
+	width: 100%;
 }
